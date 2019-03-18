@@ -1,0 +1,44 @@
+{
+  "name": "matthieupinte.com",
+  "version": "1.0.0",
+  "description": "Hi by Matthieu Pinte, a French Web developer base in Lille, France, who’s playing with JavaScript",
+  "author": "Matthieu Pinte <matthieupinte@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "keywords": [
+    "matthieu",
+    "pinte",
+    "web",
+    "developer",
+    "hi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matthieupinte/matthieupinte.com.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthieupinte/matthieupinte.com/issues"
+  },
+  "homepage": "https://github.com/matthieupinte/matthieupinte.com#readme",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "nuxt": "^2.4.5",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
