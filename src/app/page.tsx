@@ -21,7 +21,7 @@ export default function Home() {
             <h1>Matthieu Pinte</h1>
             <p>
               Hi, I’m Matthieu. I’m a{" "}
-              <strong>fullstack web & mobile developer</strong>.
+              <strong>Full-Stack web & mobile developer</strong>.
             </p>
           </div>
         </div>
