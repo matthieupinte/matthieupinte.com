@@ -1,10 +1,19 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
-import avatar from "./avatar.jpg";
-import { GithubIcon, ArrowUp, LinkedinIcon } from "@/components/icons";
+import { ArrowUp } from "@/components/icons";
 
-export default function Home() {
+import avatar from "/public/avatar.jpg";
+
+import { Trans } from "react-i18next/TransWithoutContext";
+import { useTranslation } from "../i18n";
+
+type Props = {
+  params: { lng: string };
+};
+
+export default async function Page({ params: { lng } }: Props) {
+  const { t } = await useTranslation(lng);
+
   return (
     <>
       <section className="mb-12">
@@ -20,8 +29,10 @@ export default function Home() {
           <div className="flex-1 p-4 pr-0">
             <h1>Matthieu Pinte</h1>
             <p>
-              Hi, I’m Matthieu. I’m a{" "}
-              <strong>Full-Stack web & mobile developer</strong>.
+              <Trans i18nKey="iam" t={t}>
+                Hi, I’m Matthieu. I’m a{" "}
+                <strong>full stack web & mobile developer</strong>
+              </Trans>
             </p>
           </div>
         </div>
@@ -55,37 +66,37 @@ export default function Home() {
         <div>
           <h3>Languages</h3>
           <ul className="inline-items mb-4">
-            <li className={styles.skill}>TypeScript</li>
-            <li className={styles.skill}>JavaScript</li>
-            <li className={styles.skill}>Ruby</li>
-            <li className={styles.skill}>Python</li>
+            <li className="before:content-['+_']">TypeScript</li>
+            <li className="before:content-['+_']">JavaScript</li>
+            <li className="before:content-['+_']">Ruby</li>
+            <li className="before:content-['+_']">Python</li>
           </ul>
         </div>
         <div>
           <h3>Web & Mobile</h3>
           <ul className="inline-items mb-4">
-            <li className={styles.skill}>React</li>
-            <li className={styles.skill}>React Native</li>
-            <li className={styles.skill}>Node</li>
-            <li className={styles.skill}>Ruby on Rails</li>
+            <li className="before:content-['+_']">React</li>
+            <li className="before:content-['+_']">React Native</li>
+            <li className="before:content-['+_']">Node</li>
+            <li className="before:content-['+_']">Ruby on Rails</li>
           </ul>
         </div>
         <div>
           <h3>Tools</h3>
           <ul className="inline-items mb-4">
-            <li className={styles.skill}>Git</li>
-            <li className={styles.skill}>GitHub</li>
-            <li className={styles.skill}>AWS</li>
-            <li className={styles.skill}>Serverless Framework</li>
+            <li className="before:content-['+_']">Git</li>
+            <li className="before:content-['+_']">GitHub</li>
+            <li className="before:content-['+_']">AWS</li>
+            <li className="before:content-['+_']">Serverless Framework</li>
           </ul>
         </div>
         <div>
           <h3>Exploring</h3>
           <ul className="inline-items mb-4">
-            <li className={styles.skill}>Next.js</li>
-            <li className={styles.skill}>Vue.js</li>
-            <li className={styles.skill}>Flutter</li>
-            <li className={styles.skill}>...</li>
+            <li className="before:content-['+_']">Next.js</li>
+            <li className="before:content-['+_']">Vue.js</li>
+            <li className="before:content-['+_']">Flutter</li>
+            <li className="before:content-['+_']">...</li>
           </ul>
         </div>
       </section>

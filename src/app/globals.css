@@ -43,4 +43,8 @@
   ul.inline-items li {
     @apply inline-block mr-2;
   }
+
+  .ghost {
+    color: #aaa;
+  }
 }
