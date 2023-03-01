@@ -6,6 +6,7 @@ import avatar from "/public/avatar.jpg";
 
 import { Trans } from "react-i18next/TransWithoutContext";
 import { useTranslation } from "../i18n";
+import LanguageSwitch from "@/components/LanguageSwitch";
 
 type Props = {
   params: { lng: string };
@@ -30,41 +31,48 @@ export default async function Page({ params: { lng } }: Props) {
             <h1>Matthieu Pinte</h1>
             <p>
               <Trans i18nKey="iam" t={t}>
-                Hi, I’m Matthieu. I’m a{" "}
-                <strong>full stack web & mobile developer</strong>
+                Hi, I’m Matthieu, a <strong>full-stack</strong> developer{" "}
+                specializing in <strong>web and mobile</strong> development.
               </Trans>
             </p>
           </div>
         </div>
         <p>
-          I’m passionate about tackling complex technical{" "}
-          <strong>challenges</strong> and delivering{" "}
-          <strong>high-quality</strong>, user-friendly applications.
+          <Trans i18nKey="catch" t={t}>
+            I enjoy solving <strong>complex technical</strong> problems while{" "}
+            delivering <strong>premium</strong> user-friendly applications.
+          </Trans>
         </p>
       </section>
       <section className="mb-12">
-        <h2>About me</h2>
+        <h2>{t("about_me.title")}</h2>
         <p className="prose">
-          I specialize in <strong>JavaScript</strong> stacks, front and back,
-          but I like to think of myself as a techno agnostic, always eager to
-          learn and work with new technologies.
+          <Trans i18nKey="about_me.content.0" t={t}>
+            I have expertise in <strong>JavaScript</strong> stacks, both
+            front-end and back-end, but I am always curious and ready to learn
+            and explore new technologies.
+          </Trans>
         </p>
         <p className="prose">
-          With <strong>10 years of experience</strong> in the industry, I have
-          developed a deep understanding of the development process, from
-          ideation to deployment.
+          <Trans i18nKey="about_me.content.1" t={t}>
+            With <strong>10 years of experience</strong>, I have a deep
+            understanding of the development process, from ideation to
+            production deployment.
+          </Trans>
         </p>
         <p className="prose">
-          When I’m not coding, you can find me at my favorite{" "}
-          <strong>CrossFit</strong> gym probably doing burpees or out with my
-          dog, attempting to maintain a <strong>healthy</strong> work-life
-          balance.
+          <Trans i18nKey={"about_me.content.2"} t={t}>
+            When I’m not coding, you can find me at my favorite{" "}
+            <strong>CrossFit</strong> box, probably doing burpees, or outside
+            with my dog, trying to maintain a <strong>healthy</strong> work-life
+            balance.
+          </Trans>
         </p>
       </section>
       <section className="mb-12">
-        <h2>Skills & stacks</h2>
+        <h2>{t("skills.title")}</h2>
         <div>
-          <h3>Languages</h3>
+          <h3>{t("skills.languages")}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">TypeScript</li>
             <li className="before:content-['+_']">JavaScript</li>
@@ -73,7 +81,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>Web & Mobile</h3>
+          <h3>{t("skills.web_and_mobile")}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">React</li>
             <li className="before:content-['+_']">React Native</li>
@@ -82,7 +90,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>Tools</h3>
+          <h3>{t("skills.tools")}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">Git</li>
             <li className="before:content-['+_']">GitHub</li>
@@ -91,7 +99,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>Exploring</h3>
+          <h3>{t("skills.exploring")}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">Next.js</li>
             <li className="before:content-['+_']">Vue.js</li>
@@ -101,18 +109,21 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <section className="mb-12">
-        <h2>Experiences</h2>
+        <h2>{t("experiences.title")}</h2>
         <div>
           <ul>
             <li>
               <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2021 - now</span>
+                <span className="w-[100px]">2021 - {t("now")}</span>
                 <div className="flex-1">
-                  <strong>Senior Developer</strong>
+                  <strong>{t("experiences.senior_developer")}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
-                    Make <strong>startups happy</strong> and turn their dreams
-                    into digital reality - one pixel at a time!
+                    <Trans i18nKey="experiences.derniercri_2021" t={t}>
+                      I am responsible for the <strong>satisfaction</strong> of
+                      startups by turning their ideas into digital reality, one
+                      pixel at a time!
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -124,9 +135,12 @@ export default async function Page({ params: { lng } }: Props) {
                   <strong>AI Developer</strong>
                   <span> - Neuronalys</span>
                   <p className="italic text-sm text-zinc-500">
-                    Working on <strong>Artificial Intelligence</strong> systems
-                    and building web interfaces that looked so good, even my
-                    computer was impressed.
+                    <Trans i18nKey="experiences.neuronalys_2019" t={t}>
+                      By working on <strong>artificial intelligence</strong>{" "}
+                      systems and building <strong>performant</strong> and
+                      aesthetic web interfaces, I had the opportunity to push
+                      the boundaries of our technologies.
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -135,11 +149,13 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2014 - 2019</span>
                 <div className="flex-1">
-                  <strong>Senior Developer</strong>
+                  <strong>{t("experiences.senior_developer")}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
-                    Wielding my development powers to help{" "}
-                    <strong>startups</strong> achieve greatness.
+                    <Trans i18nKey="experiences.derniercri_2014" t={t}>
+                      I contributed to the success of <strong>startups</strong>{" "}
+                      by applying my skills to their most ambitious projects.
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -148,11 +164,15 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2013 - 2014</span>
                 <div className="flex-1">
-                  <strong>Developer</strong>
+                  <strong>{t("experiences.developer")}</strong>
                   <span> - OP1C</span>
                   <p className="italic text-sm text-zinc-500">
-                    Spent my days crafting code to bring client’s{" "}
-                    <strong>social media</strong> visions to life.
+                    <Trans i18nKey="experiences.op1c_2013" t={t}>
+                      I brought to life our clients’
+                      <strong>social media</strong> dreams by creating quality
+                      code, allowing them to stand out and quickly achieve their
+                      goals.
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -161,11 +181,13 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2012 - 2013</span>
                 <div className="flex-1">
-                  <strong>Developer</strong>
+                  <strong>{t("experiences.developer")}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
-                    Played with JavaScript and Ruby on Rails all day long -
-                    using it to <strong>improve products</strong>.
+                    <Trans i18nKey="experiences.derniercri_2012" t={t}>
+                      I worked with JavaScript and Ruby on Rails to optimize the{" "}
+                      <strong>quality</strong> of our deliverables.
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -174,13 +196,9 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <section>
-        <h2>Contact</h2>
-        <p className="prose">
-          If you’re looking for a developer who is passionate about their work
-          and committed to delivering high-quality applications, then look no
-          further.
-        </p>
-        <p className="prose">Let’s connect and discuss your project!</p>
+        <h2>{t("contact.title")}</h2>
+        <p className="prose">{t("contact.prose")}</p>
+        <p className="prose">{t("contact.catch")}</p>
         <div>
           <ul className="inline-items">
             <li>
@@ -207,6 +225,9 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
       </section>
+      <div className="flex justify-end fixed bg-white p-3 top-0 inset-x-0">
+        <LanguageSwitch lng={lng} />
+      </div>
     </>
   );
 }

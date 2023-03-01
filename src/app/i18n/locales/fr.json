@@ -1,3 +1,36 @@
 {
-  "iam": "Salut, moi c’est Matthieu, <2>développeur web & mobile full stack</2>"
+  "about_me": {
+    "content": [
+      "Je possède une expertise dans les stacks <strong>JavaScript</strong>, front-end et back-end, mais je suis toujours curieux et prêt à apprendre et explorer de nouvelles technologies.",
+      "Avec <strong>10 ans d’expérience</strong>, j’ai une compréhension approfondie du processus de développement, de l'idée à la mise en production.",
+      "Quand je ne code pas, vous pouvez me trouver dans ma salle de <strong>CrossFit</strong> préférée, probablement en train de faire des burpees, ou à l’extérieur avec mon chien en essayant de maintenir un <strong>équilibre sain</strong> entre vie professionnelle et personnelle."
+    ],
+    "title": "À propos"
+  },
+  "catch": "J’aime résoudre des problèmes <strong>techniques complexes</strong> tout en produisant des applications de <strong>qualité</strong>.",
+  "contact": {
+    "catch": "N’hésitez pas à me contacter pour discuter de votre projet !",
+    "prose": "Si vous êtes à la recherche d’un développeur passionné et engagé à livrer des applications de haute qualité, vous êtes au bon endroit.",
+    "title": "Contact"
+  },
+  "experiences": {
+    "ai_developer": "Développeur en IA",
+    "derniercri_2012": "J’ai travaillé exclusivement avec JavaScript et Ruby on Rails afin d'optimiser la <strong>qualité</strong> de nos livrables.",
+    "derniercri_2014": "J’ai contribué au succès de <strong>startups</strong> en mettant mes compétences au service de leurs projets les plus ambitieux.",
+    "derniercri_2021": "Je suis en charge de la <strong>satisfaction</strong> de startups en transformant leurs idées en réalité numérique, un pixel à la fois !",
+    "developer": "Développeur",
+    "neuronalys_2019": "En travaillant sur des systèmes d’<strong>intelligence artificielle</strong> et en construisant des interfaces web <strong>performantes</strong> et esthétiques, j’ai eu l’opportunité de repousser les limites de nos technologies.",
+    "op1c_2013": "J’ai donné vie aux rêves de <strong>médias sociaux</strong> de nos clients en créant du code de qualité, leur permettant ainsi de se démarquer et d’atteindre rapidement leurs objectifs.",
+    "senior_developer": "Développeur Senior",
+    "title": "Expériences"
+  },
+  "iam": "Bonjour, je suis Matthieu, développeur <strong>full-stack</strong> spécialisé en développement <strong>web et mobile</strong>.",
+  "now": "auj.",
+  "skills": {
+    "exploring": "Exploration en cours",
+    "languages": "Langages",
+    "title": "Compétences & Stacks",
+    "tools": "Outils",
+    "web_and_mobile": "Web & Mobile"
+  }
 }
