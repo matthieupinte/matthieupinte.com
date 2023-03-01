@@ -37,10 +37,19 @@ export default async function Page({ params: { lng } }: Props) {
             </p>
           </div>
         </div>
-        <p>
+        <p className="prose">
           <Trans i18nKey="catch" t={t}>
             I enjoy solving <strong>complex technical</strong> problems while{" "}
             delivering <strong>premium</strong> user-friendly applications.
+          </Trans>
+        </p>
+        <p>
+          <Trans i18nKey="catch2" t={t}>
+            I also believe that the best solutions come from{" "}
+            <strong>collaboration</strong> and open{" "}
+            <strong>communication</strong>, and I am dedicated to working
+            closely with my clients to understand their needs and exceed their
+            expectations.
           </Trans>
         </p>
       </section>
