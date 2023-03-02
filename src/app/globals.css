@@ -9,7 +9,7 @@
   }
 
   main {
-    @apply w-auto h-auto mx-auto py-12 px-4;
+    @apply w-auto h-auto mx-auto py-14 px-4;
   }
 
   h1,

@@ -3,12 +3,12 @@
     "content": [
       "Je possède une expertise dans les stacks <strong>JavaScript</strong>, front-end et back-end, mais je suis toujours curieux et prêt à apprendre et explorer de nouvelles technologies.",
       "Avec <strong>10 ans d’expérience</strong>, j’ai une compréhension approfondie du processus de développement, de l'idée à la mise en production.",
-      "Quand je ne code pas, vous pouvez me trouver dans ma salle de <strong>CrossFit</strong> préférée, probablement en train de faire des burpees, ou à l’extérieur avec mon chien en essayant de maintenir un <strong>équilibre sain</strong> entre vie professionnelle et personnelle."
+      "Je crois également que les meilleures solutions viennent d’une <strong>communication</strong> ouverte, c’est pourquoi je tiens à travailler en étroite <strong>collaboration</strong> avec mes clients pour comprendre leurs besoins et dépasser leurs attentes."
     ],
     "title": "À propos"
   },
   "catch": "J’aime résoudre des problèmes <strong>techniques complexes</strong> tout en produisant des applications de <strong>qualité</strong>.",
-  "catch2": "Je crois également que les meilleures solutions viennent d’une <strong>communication</strong> ouverte, c’est pourquoi je tiens à travailler en étroite <strong>collaboration</strong> avec mes clients pour comprendre leurs besoins et dépasser leurs attentes.",
+  "catch2": "Quand je ne code pas, vous pouvez me trouver dans ma salle de <strong>CrossFit</strong> préférée, probablement en train de faire des burpees, ou à l’extérieur avec mon chien en essayant de maintenir un <strong>équilibre sain</strong> entre vie professionnelle et personnelle.",
   "contact": {
     "catch": "N’hésitez pas à me contacter pour discuter de votre projet !",
     "prose": "Si vous êtes à la recherche d’un développeur passionné et engagé à livrer des applications de haute qualité, vous êtes au bon endroit.",
@@ -25,7 +25,14 @@
     "senior_developer": "Développeur Senior",
     "title": "Expériences"
   },
-  "iam": "Bonjour, je suis Matthieu, développeur <strong>full-stack</strong> spécialisé en développement <strong>web et mobile</strong>.",
+  "iam": "Salut, moi c’est Matthieu, développeur <strong>full-stack</strong> spécialisé <strong>web et mobile</strong>.",
+  "meta": {
+    "description": "Développeur full-stack spécialisé web et mobile.",
+    "og": {
+      "description": "Je suis un développeur full-stack spécialisé web et mobile.",
+      "title": "Matthieu Pinte - Développeur full-stack"
+    }
+  },
   "now": "auj.",
   "skills": {
     "exploring": "Exploration en cours",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { ArrowUp } from "@/components/icons";
 
-import avatar from "/public/avatar.jpg";
+import avatar from "/public/images/avatar.jpg";
 
 import { Trans } from "react-i18next/TransWithoutContext";
 import { useTranslation } from "../i18n";
@@ -31,8 +31,8 @@ export default async function Page({ params: { lng } }: Props) {
             <h1>Matthieu Pinte</h1>
             <p>
               <Trans i18nKey="iam" t={t}>
-                Hi, I’m Matthieu, a <strong>full-stack</strong> developer{" "}
-                specializing in <strong>web and mobile</strong> development.
+                Hi, I’m Matthieu, a <strong>full-stack</strong> developer
+                specializing in <strong>web and mobile</strong>.
               </Trans>
             </p>
           </div>
@@ -45,11 +45,10 @@ export default async function Page({ params: { lng } }: Props) {
         </p>
         <p>
           <Trans i18nKey="catch2" t={t}>
-            I also believe that the best solutions come from{" "}
-            <strong>collaboration</strong> and open{" "}
-            <strong>communication</strong>, and I am dedicated to working
-            closely with my clients to understand their needs and exceed their
-            expectations.
+            When I’m not coding, you can find me at my favorite{" "}
+            <strong>CrossFit</strong> box, probably doing burpees, or outside
+            with my dog, trying to maintain a <strong>healthy</strong> work-life
+            balance.
           </Trans>
         </p>
       </section>
@@ -71,10 +70,11 @@ export default async function Page({ params: { lng } }: Props) {
         </p>
         <p className="prose">
           <Trans i18nKey={"about_me.content.2"} t={t}>
-            When I’m not coding, you can find me at my favorite{" "}
-            <strong>CrossFit</strong> box, probably doing burpees, or outside
-            with my dog, trying to maintain a <strong>healthy</strong> work-life
-            balance.
+            I also believe that the best solutions come from{" "}
+            <strong>collaboration</strong> and open{" "}
+            <strong>communication</strong>, and I am dedicated to working
+            closely with my clients to understand their needs and exceed their
+            expectations.
           </Trans>
         </p>
       </section>
