@@ -1,19 +1,18 @@
-import Image from "next/image";
+import Image from 'next/image'
+import { Trans } from 'react-i18next/TransWithoutContext'
 
-import { ArrowUp } from "@/components/icons";
+import { useTranslation } from '@/app/i18n'
+import LanguageSwitch from '@/components/LanguageSwitch'
+import { ArrowUp } from '@/components/icons'
 
-import avatar from "/public/images/avatar.jpg";
-
-import { Trans } from "react-i18next/TransWithoutContext";
-import { useTranslation } from "../i18n";
-import LanguageSwitch from "@/components/LanguageSwitch";
+import avatar from '/public/images/avatar.jpg'
 
 type Props = {
-  params: { lng: string };
-};
+  params: { lng: string }
+}
 
 export default async function Page({ params: { lng } }: Props) {
-  const { t } = await useTranslation(lng);
+  const { t } = await useTranslation(lng)
 
   return (
     <>
@@ -39,13 +38,13 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
         <p className="prose">
           <Trans i18nKey="catch" t={t}>
-            I enjoy solving <strong>complex technical</strong> problems while{" "}
+            I enjoy solving <strong>complex technical</strong> problems while{' '}
             delivering <strong>premium</strong> user-friendly applications.
           </Trans>
         </p>
         <p>
           <Trans i18nKey="catch2" t={t}>
-            When I’m not coding, you can find me at my favorite{" "}
+            When I’m not coding, you can find me at my favorite{' '}
             <strong>CrossFit</strong> box, probably doing burpees, or outside
             with my dog, trying to maintain a <strong>healthy</strong> work-life
             balance.
@@ -53,7 +52,7 @@ export default async function Page({ params: { lng } }: Props) {
         </p>
       </section>
       <section className="mb-12">
-        <h2>{t("about_me.title")}</h2>
+        <h2>{t('about_me.title')}</h2>
         <p className="prose">
           <Trans i18nKey="about_me.content.0" t={t}>
             I have expertise in <strong>JavaScript</strong> stacks, both
@@ -69,9 +68,9 @@ export default async function Page({ params: { lng } }: Props) {
           </Trans>
         </p>
         <p className="prose">
-          <Trans i18nKey={"about_me.content.2"} t={t}>
-            I also believe that the best solutions come from{" "}
-            <strong>collaboration</strong> and open{" "}
+          <Trans i18nKey={'about_me.content.2'} t={t}>
+            I also believe that the best solutions come from{' '}
+            <strong>collaboration</strong> and open{' '}
             <strong>communication</strong>, and I am dedicated to working
             closely with my clients to understand their needs and exceed their
             expectations.
@@ -79,9 +78,9 @@ export default async function Page({ params: { lng } }: Props) {
         </p>
       </section>
       <section className="mb-12">
-        <h2>{t("skills.title")}</h2>
+        <h2>{t('skills.title')}</h2>
         <div>
-          <h3>{t("skills.languages")}</h3>
+          <h3>{t('skills.languages')}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">TypeScript</li>
             <li className="before:content-['+_']">JavaScript</li>
@@ -90,7 +89,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>{t("skills.web_and_mobile")}</h3>
+          <h3>{t('skills.web_and_mobile')}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">React</li>
             <li className="before:content-['+_']">React Native</li>
@@ -99,7 +98,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>{t("skills.tools")}</h3>
+          <h3>{t('skills.tools')}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">Git</li>
             <li className="before:content-['+_']">GitHub</li>
@@ -108,7 +107,7 @@ export default async function Page({ params: { lng } }: Props) {
           </ul>
         </div>
         <div>
-          <h3>{t("skills.exploring")}</h3>
+          <h3>{t('skills.exploring')}</h3>
           <ul className="inline-items mb-4">
             <li className="before:content-['+_']">Next.js</li>
             <li className="before:content-['+_']">Vue.js</li>
@@ -118,14 +117,14 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <section className="mb-12">
-        <h2>{t("experiences.title")}</h2>
+        <h2>{t('experiences.title')}</h2>
         <div>
           <ul>
             <li>
               <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2021 - {t("now")}</span>
+                <span className="w-[100px]">2021 - {t('now')}</span>
                 <div className="flex-1">
-                  <strong>{t("experiences.senior_developer")}</strong>
+                  <strong>{t('experiences.senior_developer')}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
                     <Trans i18nKey="experiences.derniercri_2021" t={t}>
@@ -145,7 +144,7 @@ export default async function Page({ params: { lng } }: Props) {
                   <span> - Neuronalys</span>
                   <p className="italic text-sm text-zinc-500">
                     <Trans i18nKey="experiences.neuronalys_2019" t={t}>
-                      By working on <strong>artificial intelligence</strong>{" "}
+                      By working on <strong>artificial intelligence</strong>{' '}
                       systems and building <strong>performant</strong> and
                       aesthetic web interfaces, I had the opportunity to push
                       the boundaries of our technologies.
@@ -158,11 +157,11 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2014 - 2019</span>
                 <div className="flex-1">
-                  <strong>{t("experiences.senior_developer")}</strong>
+                  <strong>{t('experiences.senior_developer')}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
                     <Trans i18nKey="experiences.derniercri_2014" t={t}>
-                      I contributed to the success of <strong>startups</strong>{" "}
+                      I contributed to the success of <strong>startups</strong>{' '}
                       by applying my skills to their most ambitious projects.
                     </Trans>
                   </p>
@@ -173,7 +172,7 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2013 - 2014</span>
                 <div className="flex-1">
-                  <strong>{t("experiences.developer")}</strong>
+                  <strong>{t('experiences.developer')}</strong>
                   <span> - OP1C</span>
                   <p className="italic text-sm text-zinc-500">
                     <Trans i18nKey="experiences.op1c_2013" t={t}>
@@ -190,11 +189,11 @@ export default async function Page({ params: { lng } }: Props) {
               <div className="flex flex-row mb-4">
                 <span className="w-[100px]">2012 - 2013</span>
                 <div className="flex-1">
-                  <strong>{t("experiences.developer")}</strong>
+                  <strong>{t('experiences.developer')}</strong>
                   <span> - Dernier Cri</span>
                   <p className="italic text-sm text-zinc-500">
                     <Trans i18nKey="experiences.derniercri_2012" t={t}>
-                      I worked with JavaScript and Ruby on Rails to optimize the{" "}
+                      I worked with JavaScript and Ruby on Rails to optimize the{' '}
                       <strong>quality</strong> of our deliverables.
                     </Trans>
                   </p>
@@ -205,9 +204,9 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <section>
-        <h2>{t("contact.title")}</h2>
-        <p className="prose">{t("contact.prose")}</p>
-        <p className="prose">{t("contact.catch")}</p>
+        <h2>{t('contact.title')}</h2>
+        <p className="prose">{t('contact.prose')}</p>
+        <p className="prose">{t('contact.catch')}</p>
         <div>
           <ul className="inline-items">
             <li>
@@ -238,5 +237,5 @@ export default async function Page({ params: { lng } }: Props) {
         <LanguageSwitch lng={lng} />
       </div>
     </>
-  );
+  )
 }
