@@ -234,7 +234,7 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <div className="flex justify-end fixed bg-white p-3 top-0 inset-x-0">
-        <LanguageSwitch lng={lng} />
+        {/* <LanguageSwitch lng={lng} /> */}
       </div>
     </>
   )
