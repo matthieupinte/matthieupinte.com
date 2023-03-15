@@ -121,8 +121,8 @@ export default async function Page({ params: { lng } }: Props) {
         <div>
           <ul>
             <li>
-              <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2021 - {t('now')}</span>
+              <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
+                <span className="w-[200px]">2021 - {t('now')}</span>
                 <div className="flex-1">
                   <strong>{t('experiences.senior_developer')}</strong>
                   <span> - Dernier Cri</span>
@@ -137,8 +137,8 @@ export default async function Page({ params: { lng } }: Props) {
               </div>
             </li>
             <li>
-              <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2019 - 2021</span>
+              <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
+                <span className="w-[200px]">2019 - 2021</span>
                 <div className="flex-1">
                   <strong>AI Developer</strong>
                   <span> - Neuronalys</span>
@@ -154,8 +154,8 @@ export default async function Page({ params: { lng } }: Props) {
               </div>
             </li>
             <li>
-              <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2014 - 2019</span>
+              <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
+                <span className="w-[200px]">2014 - 2019</span>
                 <div className="flex-1">
                   <strong>{t('experiences.senior_developer')}</strong>
                   <span> - Dernier Cri</span>
@@ -169,8 +169,8 @@ export default async function Page({ params: { lng } }: Props) {
               </div>
             </li>
             <li>
-              <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2013 - 2014</span>
+              <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
+                <span className="w-[200px]">2013 - 2014</span>
                 <div className="flex-1">
                   <strong>{t('experiences.developer')}</strong>
                   <span> - OP1C</span>
@@ -186,8 +186,8 @@ export default async function Page({ params: { lng } }: Props) {
               </div>
             </li>
             <li>
-              <div className="flex flex-row mb-4">
-                <span className="w-[100px]">2012 - 2013</span>
+              <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
+                <span className="w-[200px]">2012 - 2013</span>
                 <div className="flex-1">
                   <strong>{t('experiences.developer')}</strong>
                   <span> - Dernier Cri</span>
@@ -201,6 +201,66 @@ export default async function Page({ params: { lng } }: Props) {
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section>
+        <h2 className="mb-4">Contributions</h2>
+        <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
+          <div>
+            <Image
+              alt="Mooncard"
+              src="/images/mooncard.png"
+              width={200}
+              height={63}
+              className=" pt-4 pb-3 px-4"
+            />
+          </div>
+          <div className="flex-1 flex-col">
+            <strong className="hidden md:block">Mooncard</strong>
+            <p className="italic text-sm text-zinc-500">
+              <Trans i18nKey="contributions.mooncard.description" t={t}>
+                In close collaboration with Tristan Leteurtre, president and co-founder of Mooncard, we started by developing an MVP on the Ruby on Rails framework. The goal was to quickly test the idea in the market. Once the first functional version was successfully tested (our first purchase was a bottle of champagne), I continued to work with the Mooncard team to help them with their development and recruitment. I'm happy to see that the work we accomplished paid off, as Mooncard is now used by more than 5000 companies, with over 200 million euros of transactions each year.
+              </Trans>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
+          <div>
+            <Image
+              alt="Cityscoot"
+              src="/images/cityscoot.png"
+              width={200}
+              height={79}
+              className="pt-4 pb-3 px-4"
+            />
+          </div>
+          <div className="flex-1 flex-col">
+            <strong className="hidden md:block">Cityscoot</strong>
+            <p className="italic text-sm text-zinc-500">
+              <Trans i18nKey="contributions.cityscoot.description" t={t}>
+                During a major overhaul of their services, Cityscoot sought a partner to develop their new mobile application. Working in collaboration with their teams, my role was to design and develop the user interface using React Native, ensure the quality of the code, and ensure that the application worked on all mobile devices, in order to provide a more complete, intuitive, and practical user experience. And to be sure that everything was working perfectly, I conducted some tests in the heart of Paris, on a scooter in the middle of traffic, taking care to avoid pedestrians! I am proud to have contributed to the improvement of Cityscoot's services and their development in France and Europe!
+              </Trans>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
+          <div>
+            <Image
+              alt="Monop’hop"
+              src="/images/monophop.png"
+              width={200}
+              height={79}
+              className=" pt-4 pb-3 px-4"
+            />
+          </div>
+          <div className="flex-1 flex-col">
+            <strong className="hidden md:block">Monop'hop</strong>
+            <p className="italic text-sm text-zinc-500">
+              <Trans i18nKey="contributions.monophop.description" t={t}>
+                During a major overhaul of their services, Cityscoot sought a partner to develop their new mobile application. Working in collaboration with their teams, my role was to design and develop the user interface using React Native, ensure the quality of the code, and ensure that the application worked on all mobile devices, in order to provide a more complete, intuitive, and practical user experience. And to be sure that everything was working perfectly, I conducted some tests in the heart of Paris, on a scooter in the middle of traffic, taking care to avoid pedestrians! I am proud to have contributed to the improvement of Cityscoot's services and their development in France and Europe!
+              </Trans>
+            </p>
+          </div>
         </div>
       </section>
       <section>
@@ -234,7 +294,7 @@ export default async function Page({ params: { lng } }: Props) {
         </div>
       </section>
       <div className="flex justify-end fixed bg-white p-3 top-0 inset-x-0">
-        {/* <LanguageSwitch lng={lng} /> */}
+        <LanguageSwitch lng={lng} path="/" />
       </div>
     </>
   )

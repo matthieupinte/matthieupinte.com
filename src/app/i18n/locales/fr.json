@@ -14,6 +14,17 @@
     "prose": "Si vous êtes à la recherche d’un développeur passionné et engagé à livrer des applications de haute qualité, vous êtes au bon endroit.",
     "title": "Contact"
   },
+  "contributions": {
+    "cityscoot": {
+      "description": "Pendant une phase de refonte majeure de leurs services, Cityscoot a cherché un partenaire pour réaliser leur nouvelle application mobile. En collaboration avec leurs équipes, mon travail consistait à concevoir et à développer l’interface utilisateur en React Native, à garantir la qualité du code et à m’assurer que l’application fonctionnait sur tous les appareils mobiles, afin de proposer une expérience utilisateur encore plus complète, intuitive et pratique. Et pour être sûr que tout fonctionnait parfaitement, j'ai réalisé quelques tests en plein Paris, sur un scooter en plein trafic en prenant soin d’éviter les piétons ! Je suis fier dÆavoir contribué à l’amélioration des services Cityscoot et à leur développement en France et en Europe !"
+    },
+    "monophop": {
+      "description": "J’ai eu l’opportunité de travailler sur l’application Monop’hop de Monoprix. Mon rôle consistait à réaliser l’interface mobile tout en la connectant à l’API fournie par leurs équipes. Un projet ambitieux, l’objectif étant de créer une application de courses en ligne ultra-rapide, permettant aux utilisateurs de remplir leur panier en quelques minutes seulement, puis de récupérer leur commande en magasin ou de se faire livrer à domicile en moins de 10 minutes."
+    },
+    "mooncard": {
+      "description": "En étroite collaboration avec Tristan Leteurtre, président et co-fondateur de Mooncard, nous avons commencé en développant un MVP sur le framework Ruby on Rails. L'objectif était de confronter rapidement l'idée au marché. Une fois que la première version fonctionnelle à été testée avec succès (notre première dépense était une bouteille de champagne), j'ai continué à travailler avec l'équipe de Mooncard pour les aider dans leur développement et leur recrutement. Je suis heureux de voir que le travail accompli a porté ses fruits puisque Mooncard est aujourd'hui utilisé par plus de 5000 entreprises, avec plus de 200 millions d'euros de transactions chaque année."
+    }
+  },
   "experiences": {
     "ai_developer": "Développeur en IA",
     "derniercri_2012": "J’ai travaillé exclusivement avec JavaScript et Ruby on Rails afin d'optimiser la <strong>qualité</strong> de nos livrables.",

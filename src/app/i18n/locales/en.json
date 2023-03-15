@@ -14,6 +14,17 @@
     "prose": "If you’re looking for a developer who is passionate about their work and committed to delivering high-quality applications, then look no further.",
     "title": "Contact"
   },
+  "contributions": {
+    "cityscoot": {
+      "description": "During a major overhaul of their services, Cityscoot sought a partner to develop their new mobile application. Working in collaboration with their teams, my role was to design and develop the user interface using React Native, ensure the quality of the code, and ensure that the application worked on all mobile devices, in order to provide a more complete, intuitive, and practical user experience. And to be sure that everything was working perfectly, I conducted some tests in the heart of Paris, on a scooter in the middle of traffic, taking care to avoid pedestrians! I am proud to have contributed to the improvement of Cityscoot's services and their development in France and Europe!"
+    },
+    "monophop": {
+      "description": "I had the opportunity to work on the Monop'hop application for Monoprix. My role was to create the mobile interface while connecting it to the API provided by their teams. It was an ambitious project, with the goal of creating an ultra-fast online shopping application, allowing users to fill their basket in just a few minutes, then pick up their order in-store or have it delivered to their home in less than 10 minutes."
+    },
+    "mooncard": {
+      "description": "In close collaboration with Tristan Leteurtre, president and co-founder of Mooncard, we started by developing an MVP on the Ruby on Rails framework. The goal was to quickly test the idea in the market. Once the first functional version was successfully tested (our first purchase was a bottle of champagne), I continued to work with the Mooncard team to help them with their development and recruitment. I'm happy to see that the work we accomplished paid off, as Mooncard is now used by more than 5000 companies, with over 200 million euros of transactions each year."
+    }
+  },
   "experiences": {
     "ai_developer": "AI developer",
     "derniercri_2012": "I worked with JavaScript and Ruby on Rails to optimize the <strong>quality</strong> of our deliverables.",
