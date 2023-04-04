@@ -14,6 +14,17 @@
     "prose": "If you’re looking for a developer who is passionate about their work and committed to delivering high-quality applications, then look no further.",
     "title": "Contact"
   },
+  "contributions": {
+    "cityscoot": {
+      "description": "I collaborated with Cityscoot to design and develop their new mobile application during a major overhaul of their services. My work involved creating the user interface in React Native, ensuring code quality, and testing the application on various mobile devices to offer a more complete, intuitive, and practical user experience. To ensure everything worked perfectly, I conducted tests on a scooter in traffic in Paris. I'm glad to have contributed to improving Cityscoot's services in France and Europe."
+    },
+    "monophop": {
+      "description": "I had the opportunity to work on the Monop'hop application for Monoprix. My role was to create the mobile interface while connecting it to the API provided by their teams. It was an ambitious project, with the goal of creating an ultra-fast online shopping application, allowing users to fill their basket in just a few minutes, then pick up their order in-store or have it delivered to their home in less than 10 minutes."
+    },
+    "mooncard": {
+      "description": "In close collaboration with Tristan Leteurtre, president and co-founder of Mooncard, we started by developing an MVP on the Ruby on Rails framework. The goal was to quickly test the idea in the market. Once the first functional version was successfully tested (our first purchase was a bottle of champagne), I continued to work with the Mooncard team to help them with their development and recruitment. I'm happy to see that the work we accomplished paid off, as Mooncard is now used by more than 5000 companies, with over 200 million euros of transactions each year."
+    }
+  },
   "experiences": {
     "ai_developer": "AI developer",
     "derniercri_2012": "I worked with JavaScript and Ruby on Rails to optimize the <strong>quality</strong> of our deliverables.",

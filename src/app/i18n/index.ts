@@ -7,16 +7,25 @@ const initI18next = async (lng: string, ns: string) => {
   const i18nInstance = createInstance()
   await i18nInstance
     .use(initReactI18next)
-    .use(resourcesToBackend((language: string, _namespace: string) => import(`./locales/${language}.json`)))
+    .use(
+      resourcesToBackend(
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        (language: string, _ns: string) => import(`./locales/${language}.json`),
+      ),
+    )
     .init(getOptions(lng, ns))
   return i18nInstance
 }
 
-export async function useTranslation(lng: string, ns = '', options: { keyPrefix?: string } = {}) {
+export async function useTranslation(
+  lng: string,
+  ns = '',
+  options: { keyPrefix?: string } = {},
+) {
   const i18nextInstance = await initI18next(lng, ns)
 
   return {
     t: i18nextInstance.getFixedT(lng, ns, options.keyPrefix),
-    i18n: i18nextInstance
+    i18n: i18nextInstance,
   }
 }

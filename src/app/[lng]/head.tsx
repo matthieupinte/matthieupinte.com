@@ -21,7 +21,7 @@ export default async function Head({ params: { lng } }: Props) {
       />
       <meta
         name="keywords"
-        content="Matthieu, Pinte, développeur, developer, full-stack, web, mobile, JavaScript, React, React.js, React Native, Ruby, Ruby on Rails, Node.js, HTML, CSS, PostgreSQL, git, GitHub, AWS, serverless"
+        content="Matthieu, Pinte, développeur, developer, full-stack, back-end, front-end, web, mobile, JavaScript, React, React.js, React Native, Ruby, Ruby on Rails, Node.js, HTML, CSS, PostgreSQL, git, GitHub, AWS, serverless"
       />
       <meta name="author" content="Matthieu Pinte" />
       <title>Matthieu Pinte</title>

@@ -30,7 +30,7 @@
   }
 
   h3 {
-    @apply text-lg mb-1;
+    @apply font-sans font-normal mb-1;
   }
 
   a {

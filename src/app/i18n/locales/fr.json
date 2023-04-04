@@ -14,6 +14,17 @@
     "prose": "Si vous êtes à la recherche d’un développeur passionné et engagé à livrer des applications de haute qualité, vous êtes au bon endroit.",
     "title": "Contact"
   },
+  "contributions": {
+    "cityscoot": {
+      "description": "J'ai collaboré avec Cityscoot pour concevoir et développer leur nouvelle application mobile lors d'une phase de refonte importante de leurs services. Mon travail consistait à créer l'interface utilisateur en React Native, à garantir la qualité du code et à tester l'application sur différents appareils mobiles pour offrir une expérience utilisateur plus complète, intuitive et pratique. Pour m'assurer que tout fonctionnait parfaitement, j'ai même effectué des tests de scooter en plein Paris. Je suis heureux d'avoir contribué à améliorer les services de Cityscoot en France et en Europe."
+    },
+    "monophop": {
+      "description": "J’ai eu l’opportunité de travailler sur l’application Monop’hop de Monoprix. Mon rôle consistait à réaliser l’interface mobile tout en la connectant à l’API fournie par leurs équipes. Un projet ambitieux, l’objectif étant de créer une application de courses en ligne ultra-rapide, permettant aux utilisateurs de remplir leur panier en quelques minutes seulement, puis de récupérer leur commande en magasin ou de se faire livrer à domicile en moins de 10 minutes."
+    },
+    "mooncard": {
+      "description": "En collaboration avec Tristan Leteurtre, président et co-fondateur de Mooncard, nous avons développé un MVP sur Ruby on Rails pour tester rapidement l'idée sur le marché. Après le succès de cette première version, j'ai continué à accompagner l'équipe de Mooncard dans leur développement et recrutement. Mooncard est maintenant utilisé par plus de 5000 entreprises et génère plus de 200 millions d'euros de transactions chaque année."
+    }
+  },
   "experiences": {
     "ai_developer": "Développeur en IA",
     "derniercri_2012": "J’ai travaillé exclusivement avec JavaScript et Ruby on Rails afin d'optimiser la <strong>qualité</strong> de nos livrables.",
@@ -35,7 +46,7 @@
   },
   "now": "auj.",
   "skills": {
-    "exploring": "Exploration en cours",
+    "exploring": "Exploration",
     "languages": "Langages",
     "title": "Compétences & Stacks",
     "tools": "Outils",
