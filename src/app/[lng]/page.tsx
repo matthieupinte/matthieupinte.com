@@ -122,8 +122,11 @@ export default async function Page({ params: { lng } }: Props) {
           <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
             <span className="w-[150px]">2021 - {t('now')}</span>
             <div className="flex-1">
-              <strong>{t('experiences.senior_developer')}</strong>
-              <span> - Dernier Cri</span>
+              <div>
+                <strong>{t('experiences.senior_developer')}</strong>
+                <span> - </span>
+                <a href="https://derniercri.io" target="_blank" rel="noreferrer"><ArrowUp className="inline-block" /> Dernier Cri</a>
+              </div>
               <p className="italic text-sm text-zinc-500">
                 <Trans i18nKey="experiences.derniercri_2021" t={t}>
                   I am responsible for the <strong>satisfaction</strong> of
@@ -136,8 +139,11 @@ export default async function Page({ params: { lng } }: Props) {
           <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
             <span className="w-[150px]">2019 - 2021</span>
             <div className="flex-1">
-              <strong>AI Developer</strong>
-              <span> - Neuronalys</span>
+              <div>
+                <strong>{t('experiences.ai_developer')}</strong>
+                <span> - </span>
+                <a href="https://www.neuronalys.ai/" target="_blank" rel="noreferrer"><ArrowUp className="inline-block" /> Neuronalys</a>
+              </div>
               <p className="italic text-sm text-zinc-500">
                 <Trans i18nKey="experiences.neuronalys_2019" t={t}>
                   By working on <strong>artificial intelligence</strong>{' '}
@@ -151,8 +157,11 @@ export default async function Page({ params: { lng } }: Props) {
           <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
             <span className="w-[150px]">2014 - 2019</span>
             <div className="flex-1">
-              <strong>{t('experiences.senior_developer')}</strong>
-              <span> - Dernier Cri</span>
+              <div>
+                <strong>{t('experiences.senior_developer')}</strong>
+                <span> - </span>
+                <a href="https://derniercri.io" target="_blank" rel="noreferrer"><ArrowUp className="inline-block" /> Dernier Cri</a>
+              </div>
               <p className="italic text-sm text-zinc-500">
                 <Trans i18nKey="experiences.derniercri_2014" t={t}>
                   I contributed to the success of <strong>startups</strong>{' '}
@@ -164,8 +173,11 @@ export default async function Page({ params: { lng } }: Props) {
           <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
             <span className="w-[150px]">2013 - 2014</span>
             <div className="flex-1">
-              <strong>{t('experiences.developer')}</strong>
-              <span> - OP1C</span>
+              <div>
+                <strong>{t('experiences.developer')}</strong>
+                <span> - </span>
+                <a href="https://op1c.com/" target="_blank" rel="noreferrer"><ArrowUp className="inline-block" /> OP1C</a>
+              </div>
               <p className="italic text-sm text-zinc-500">
                 <Trans i18nKey="experiences.op1c_2013" t={t}>
                   I brought to life our clients’
@@ -179,8 +191,11 @@ export default async function Page({ params: { lng } }: Props) {
           <div className="flex flex-col mb-4 gap-2 md:flex-row md:gap-4">
             <span className="w-[150px]">2012 - 2013</span>
             <div className="flex-1">
-              <strong>{t('experiences.developer')}</strong>
-              <span> - Dernier Cri</span>
+              <div>
+                <strong>{t('experiences.developer')}</strong>
+                <span> - </span>
+                <a href="https://derniercri.io" target="_blank" rel="noreferrer"><ArrowUp className="inline-block" /> Dernier Cri</a>
+              </div>
               <p className="italic text-sm text-zinc-500">
                 <Trans i18nKey="experiences.derniercri_2012" t={t}>
                   I worked with JavaScript and Ruby on Rails to optimize the{' '}
@@ -194,7 +209,7 @@ export default async function Page({ params: { lng } }: Props) {
       <section className="mb-12">
         <h2 className="mb-4">Contributions</h2>
         <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
-          <div>
+          <a href="https://mooncard.co" target="_blank" rel="noreferrer">
             <Image
               alt="Mooncard"
               src="/images/mooncard.png"
@@ -202,9 +217,12 @@ export default async function Page({ params: { lng } }: Props) {
               height={63}
               className=" pt-4 pb-3 px-4"
             />
-          </div>
+          </a>
           <div className="flex-1 flex-col">
-            <strong className="hidden md:block">Mooncard</strong>
+            <a href="https://mooncard.co" target="_blank" rel="noreferrer" className="hidden md:block">
+              <ArrowUp className="inline-block" />{' '}
+              <strong>Mooncard</strong>
+            </a>
             <p className="italic text-sm text-zinc-500">
               <Trans i18nKey="contributions.mooncard.description" t={t}>
                 In close collaboration with Tristan Leteurtre, president and co-founder of Mooncard, we started by developing an MVP on the Ruby on Rails framework. The goal was to quickly test the idea in the market. Once the first functional version was successfully tested (our first purchase was a bottle of champagne), I continued to work with the Mooncard team to help them with their development and recruitment. I’m happy to see that the work we accomplished paid off, as Mooncard is now used by more than 5000 companies, with over 200 million euros of transactions each year.
@@ -213,7 +231,7 @@ export default async function Page({ params: { lng } }: Props) {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
-          <div>
+          <a href='https://www.cityscoot.eu/' target='_blank' rel='noreferrer'>
             <Image
               alt="Cityscoot"
               src="/images/cityscoot.png"
@@ -221,9 +239,12 @@ export default async function Page({ params: { lng } }: Props) {
               height={79}
               className="pt-4 pb-3 px-4"
             />
-          </div>
+          </a>
           <div className="flex-1 flex-col">
-            <strong className="hidden md:block">Cityscoot</strong>
+            <a href='https://www.cityscoot.eu/' target='_blank' rel='noreferrer' className="hidden md:block">
+              <ArrowUp className="inline-block" />{' '}
+              <strong>Cityscoot</strong>
+            </a>
             <p className="italic text-sm text-zinc-500">
               <Trans i18nKey="contributions.cityscoot.description" t={t}>
                 I collaborated with Cityscoot to design and develop their new mobile application during a major overhaul of their services. My work involved creating the user interface in React Native, ensuring code quality, and testing the application on various mobile devices to offer a more complete, intuitive, and practical user experience. To ensure everything worked perfectly, I conducted tests on a scooter in traffic in Paris. I’m glad to have contributed to improving Cityscoot’s services in France and Europe.
@@ -232,7 +253,7 @@ export default async function Page({ params: { lng } }: Props) {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12">
-          <div>
+          <a href="https://entreprise.monoprix.fr/espace-presse/communiques/monophop/" target="_blank" rel="noreferrer">
             <Image
               alt="Monop’hop"
               src="/images/monophop.png"
@@ -240,9 +261,12 @@ export default async function Page({ params: { lng } }: Props) {
               height={79}
               className=" pt-4 pb-3 px-4"
             />
-          </div>
+          </a>
           <div className="flex-1 flex-col">
-            <strong className="hidden md:block">Monop’hop</strong>
+            <a href="https://entreprise.monoprix.fr/espace-presse/communiques/monophop/" target="_blank" rel="noreferrer" className="hidden md:block">
+              <ArrowUp className="inline-block" />{' '}
+              <strong>Monop’hop</strong>
+            </a>
             <p className="italic text-sm text-zinc-500">
               <Trans i18nKey="contributions.monophop.description" t={t}>
                 I had the opportunity to work on the Monop’hop application for Monoprix. My role was to create the mobile interface while connecting it to the API provided by their teams. It was an ambitious project, with the goal of creating an ultra-fast online shopping application, allowing users to fill their basket in just a few minutes, then pick up their order in-store or have it delivered to their home in less than 10 minutes.
