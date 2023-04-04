@@ -12,6 +12,7 @@ i18next
   .use(initReactI18next)
   .use(
     resourcesToBackend(
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       (language: string, _ns: string) => import(`./locales/${language}.json`),
     ),
   )

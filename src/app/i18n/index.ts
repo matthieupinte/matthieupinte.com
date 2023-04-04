@@ -9,6 +9,7 @@ const initI18next = async (lng: string, ns: string) => {
     .use(initReactI18next)
     .use(
       resourcesToBackend(
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         (language: string, _ns: string) => import(`./locales/${language}.json`),
       ),
     )
